@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.832601">
+<testcase classname="Definite all the RestAssured API Calls" name="Use all API Calls for given URL" time="6.832601">
+<system-out><![CDATA[Given Users should call  api with GET Method................................passed
+When Users should call api with POST Method.................................passed
+And Users should call api with PUT Method...................................passed
+Then User should call api with Delate Method................................passed
+]]></system-out>
+</testcase>
+</testsuite>

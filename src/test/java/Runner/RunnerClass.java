@@ -14,6 +14,8 @@ import cucumber.api.junit.Cucumber;
 		
 		glue ={"com.Stepdefinition"},
 		
+				format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"},
+		
 		tags={"@RestAssured_API_CALLS"}
 		
 		)

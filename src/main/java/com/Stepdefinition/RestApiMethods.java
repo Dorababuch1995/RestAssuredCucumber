@@ -6,6 +6,7 @@ import cucumber.api.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
+import junit.framework.Assert;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -69,6 +70,8 @@ public void users_should_call_api_with_PUT_Method() throws Throwable {
 	
 	String asString = put.getBody().asString();
 	System.out.println(asString);
+	
+	Assert.assertFalse(true);
 }
 
 @Then("^User should call api with Delate Method$")

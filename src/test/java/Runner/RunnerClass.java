@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		
 		glue ={"com.Stepdefinition"},
 		
-		tags={"@WebCRM_PROJECT"}
+		tags={"@RestAssured_API_CALLS"}
 		
 		)
 

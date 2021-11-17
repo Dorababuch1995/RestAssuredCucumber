@@ -1,71 +1,154 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("RestCalls.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Web_Login.feature");
 formatter.feature({
-  "line": 5,
-  "name": "Definite all the RestAssured API Calls",
+  "line": 3,
+  "name": "CRM APPLICATION LOGIN TEST",
   "description": "",
-  "id": "definite-all-the-restassured-api-calls",
+  "id": "crm-application-login-test",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 4,
-      "name": "@RestAssured_API_CALLS"
+      "line": 2,
+      "name": "@WebCRM_PROJECT"
     }
   ]
 });
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 7,
-  "name": "Use all API Calls for given URL",
+  "name": "Validate CRM Login page with validate usernamae and password",
   "description": "",
-  "id": "definite-all-the-restassured-api-calls;use-all-api-calls-for-given-url",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "crm-application-login-test;validate-crm-login-page-with-validate-usernamae-and-password",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@login_CRM"
+    }
+  ]
 });
 formatter.step({
   "line": 8,
-  "name": "Users should call  api with GET Method",
+  "name": "Usershould open BASE URL",
   "keyword": "Given "
 });
 formatter.step({
   "line": 9,
-  "name": "Users should call api with POST Method",
+  "name": "Usershould enter validate \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 10,
-  "name": "Users should call api with PUT Method",
-  "keyword": "And "
+  "name": "Usershould should click login button",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "User should call api with Delate Method",
+  "name": "Validate URL",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 13,
+  "name": "",
+  "description": "",
+  "id": "crm-application-login-test;validate-crm-login-page-with-validate-usernamae-and-password;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 14,
+      "id": "crm-application-login-test;validate-crm-login-page-with-validate-usernamae-and-password;;1"
+    },
+    {
+      "cells": [
+        "Reddy77077",
+        "Saibaba77"
+      ],
+      "line": 15,
+      "id": "crm-application-login-test;validate-crm-login-page-with-validate-usernamae-and-password;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Validate CRM Login page with validate usernamae and password",
+  "description": "",
+  "id": "crm-application-login-test;validate-crm-login-page-with-validate-usernamae-and-password;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@WebCRM_PROJECT"
+    },
+    {
+      "line": 6,
+      "name": "@login_CRM"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "Usershould open BASE URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "Usershould enter validate \"Reddy77077\" and \"Saibaba77\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "Usershould should click login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "Validate URL",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "RestApiMethods.users_should_call_api_with_GET_Method()"
+  "location": "Web_Stepdefinition.usershould_open_BASE_URL()"
 });
 formatter.result({
-  "duration": 4998727500,
+  "duration": 46906068300,
   "status": "passed"
 });
 formatter.match({
-  "location": "RestApiMethods.users_should_call_api_with_POST_Method()"
+  "arguments": [
+    {
+      "val": "Reddy77077",
+      "offset": 27
+    },
+    {
+      "val": "Saibaba77",
+      "offset": 44
+    }
+  ],
+  "location": "Web_Stepdefinition.usershould_enter_validate_and(String,String)"
 });
 formatter.result({
-  "duration": 626422300,
+  "duration": 695778600,
   "status": "passed"
 });
 formatter.match({
-  "location": "RestApiMethods.users_should_call_api_with_PUT_Method()"
+  "location": "Web_Stepdefinition.usershould_should_click_login_button()"
 });
 formatter.result({
-  "duration": 620369400,
+  "duration": 5595406000,
   "status": "passed"
 });
 formatter.match({
-  "location": "RestApiMethods.user_should_call_api_with_Delate_Method()"
+  "location": "Web_Stepdefinition.validate_URL()"
 });
 formatter.result({
-  "duration": 587081700,
+  "duration": 908259600,
   "status": "passed"
 });
 });

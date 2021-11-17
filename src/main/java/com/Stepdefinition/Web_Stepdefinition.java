@@ -48,7 +48,7 @@ public class Web_Stepdefinition {
 	public void validate_URL() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 
-		Assert.assertTrue(true);
+		Assert.assertTrue(false);
 		
 		driver.quit();
 		

@@ -1,75 +1,99 @@
 [
   {
-    "line": 5,
+    "line": 3,
     "elements": [
       {
-        "line": 7,
-        "name": "Use all API Calls for given URL",
+        "line": 15,
+        "name": "Validate CRM Login page with validate usernamae and password",
         "description": "",
-        "id": "definite-all-the-restassured-api-calls;use-all-api-calls-for-given-url",
+        "id": "crm-application-login-test;validate-crm-login-page-with-validate-usernamae-and-password;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4998727500,
+              "duration": 46906068300,
               "status": "passed"
             },
             "line": 8,
-            "name": "Users should call  api with GET Method",
+            "name": "Usershould open BASE URL",
             "match": {
-              "location": "RestApiMethods.users_should_call_api_with_GET_Method()"
+              "location": "Web_Stepdefinition.usershould_open_BASE_URL()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 626422300,
+              "duration": 695778600,
               "status": "passed"
             },
             "line": 9,
-            "name": "Users should call api with POST Method",
+            "name": "Usershould enter validate \"Reddy77077\" and \"Saibaba77\"",
             "match": {
-              "location": "RestApiMethods.users_should_call_api_with_POST_Method()"
+              "arguments": [
+                {
+                  "val": "Reddy77077",
+                  "offset": 27
+                },
+                {
+                  "val": "Saibaba77",
+                  "offset": 44
+                }
+              ],
+              "location": "Web_Stepdefinition.usershould_enter_validate_and(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 620369400,
+              "duration": 5595406000,
               "status": "passed"
             },
             "line": 10,
-            "name": "Users should call api with PUT Method",
+            "name": "Usershould should click login button",
             "match": {
-              "location": "RestApiMethods.users_should_call_api_with_PUT_Method()"
+              "location": "Web_Stepdefinition.usershould_should_click_login_button()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 587081700,
+              "duration": 908259600,
               "status": "passed"
             },
             "line": 11,
-            "name": "User should call api with Delate Method",
+            "name": "Validate URL",
             "match": {
-              "location": "RestApiMethods.user_should_call_api_with_Delate_Method()"
+              "location": "Web_Stepdefinition.validate_URL()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@WebCRM_PROJECT"
+          },
+          {
+            "line": 6,
+            "name": "@login_CRM"
           }
         ]
       }
     ],
-    "name": "Definite all the RestAssured API Calls",
+    "name": "CRM APPLICATION LOGIN TEST",
     "description": "",
-    "id": "definite-all-the-restassured-api-calls",
+    "id": "crm-application-login-test",
     "keyword": "Feature",
-    "uri": "RestCalls.feature",
+    "uri": "Web_Login.feature",
     "tags": [
       {
-        "line": 4,
-        "name": "@RestAssured_API_CALLS"
+        "line": 2,
+        "name": "@WebCRM_PROJECT"
       }
     ]
   }

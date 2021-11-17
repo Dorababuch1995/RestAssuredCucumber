@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 		
 				format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"},
 		
-		tags={"@RestAssured_API_CALLS"}
+		tags={"@WebCRM_PROJECT"}
 		
 		)
 
